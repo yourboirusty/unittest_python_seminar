@@ -3,4 +3,4 @@
 ## Na przykładzie Django
 ### Z wykorzystaniem FactoryBoy i biblioteki unittest
 
-## Instrukcje uruchomienia aplikacji są w pliku (APP_DOC.md)[APP_DOC.md]
+## Instrukcje uruchomienia aplikacji są w pliku [APP_DOC.md](APP_DOC.md)
