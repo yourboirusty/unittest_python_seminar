@@ -44,9 +44,9 @@ class Car(models.Model):
 
         n(int) -- number of cars returned, default 5
         """
-        cars = Car.objects.annotate(review_number=models.Count('reviews'))
-        sorted_cars = cars.order_by('review_number')
-        return sorted_cars[:n]
+    cars = Car.objects.all()
+    cars_sorted = sorted(cars, key=lambda car: car.reviews.count())
+    return cars_sorted[:n]
 
     def clean(self):
         return validate_car(self.make, self.model)
